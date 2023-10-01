@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IPatientService {
     List<Patient> getPatients();
+
+    Patient getPatientById(String id);
 }

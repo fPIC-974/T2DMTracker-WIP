@@ -21,6 +21,7 @@ public class PatientService implements IPatientService {
         return patientRepository.findAll();
     }
 
+    @Override
     public Patient getPatientById(String id) {
         Optional<Patient> patient = patientRepository.findById(id);
 
