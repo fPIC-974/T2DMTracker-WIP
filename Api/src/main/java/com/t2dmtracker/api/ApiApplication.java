@@ -1,5 +1,6 @@
 package com.t2dmtracker.api;
 
+import com.t2dmtracker.api.service.IPatientService;
 import com.t2dmtracker.api.service.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -10,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ApiApplication implements CommandLineRunner {
 
 	@Autowired
-	private PatientService patientService;
+	private IPatientService patientService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);

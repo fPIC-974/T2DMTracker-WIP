@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PatientService {
+public class PatientService implements IPatientService {
 
     private final PatientRepository patientRepository;
 
@@ -15,6 +15,7 @@ public class PatientService {
         this.patientRepository = patientRepository;
     }
 
+    @Override
     public List<Patient> getPatients() {
         return patientRepository.findAll();
     }
