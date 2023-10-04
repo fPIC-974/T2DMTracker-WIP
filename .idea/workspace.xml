@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Setting up Controller" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Added logging configuration in application.properties">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +92,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiApplication">
+  <component name="RunManager" selected="JUnit.PatientServiceTest.shouldNotAddExistingPatient">
     <configuration name="PatientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
@@ -100,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatientServiceTest.shouldGetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PatientServiceTest.shouldAddPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
       <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
-      <option name="METHOD_NAME" value="shouldGetAllUsers" />
+      <option name="METHOD_NAME" value="shouldAddPatient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatientServiceTest.shouldNotGetAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PatientServiceTest.shouldNotAddExistingPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
         <pattern>
@@ -142,7 +150,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
       <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
-      <option name="METHOD_NAME" value="shouldNotGetAllUsers" />
+      <option name="METHOD_NAME" value="shouldNotAddExistingPatient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PatientServiceTest.shouldNotAddExistingPatient" />
+        <item itemvalue="JUnit.PatientServiceTest.shouldAddPatient" />
         <item itemvalue="JUnit.PatientServiceTest" />
         <item itemvalue="JUnit.PatientServiceTest.shouldGetPatientById" />
         <item itemvalue="JUnit.PatientServiceTest.shouldNotGetPatientById" />
-        <item itemvalue="JUnit.PatientServiceTest.shouldNotGetAllUsers" />
-        <item itemvalue="JUnit.PatientServiceTest.shouldGetAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696413046810</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="API :&#10;- Added logging configuration in application.properties">
+      <created>1696430361615</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696430361615</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +313,8 @@
     <MESSAGE value="- PatientService.getPatientById added" />
     <MESSAGE value="- Added Tests" />
     <MESSAGE value="API :&#10;- Setting up Controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Setting up Controller" />
+    <MESSAGE value="API :&#10;- Added logging configuration in application.properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Added logging configuration in application.properties" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

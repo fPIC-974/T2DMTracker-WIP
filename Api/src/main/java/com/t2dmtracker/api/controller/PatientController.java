@@ -3,10 +3,7 @@ package com.t2dmtracker.api.controller;
 import com.t2dmtracker.api.model.Patient;
 import com.t2dmtracker.api.service.IPatientService;
 import com.t2dmtracker.api.service.PatientService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +24,10 @@ public class PatientController {
     @GetMapping("/patient")
     public Patient getPatient(@RequestParam String id) {
         return patientService.getPatientById(id);
+    }
+
+    @PostMapping("/patient")
+    public Patient addPatient(@RequestBody Patient patient) {
+        return patientService.addPatient(patient);
     }
 }

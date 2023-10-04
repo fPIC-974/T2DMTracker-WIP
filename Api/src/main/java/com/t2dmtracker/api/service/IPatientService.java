@@ -8,4 +8,6 @@ public interface IPatientService {
     List<Patient> getPatients();
 
     Patient getPatientById(String id);
+
+    Patient addPatient(Patient patient);
 }

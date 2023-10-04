@@ -8,14 +8,14 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.security.InvalidParameterException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.ArgumentMatchers.anyInt;
-import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -67,5 +67,30 @@ class PatientServiceTest {
         Patient toCheck = patientService.getPatientById("idea");
 
         assertNull(toCheck);
+    }
+
+    @Test
+    public void shouldAddPatient() {
+        Patient patient = new Patient(null, "Doe", "John", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+
+        when(patientRepository.save(any(Patient.class))).thenReturn(patient);
+
+        Patient toCheck = patientService.addPatient(patient);
+
+        assertNotNull(patient);
+        assertEquals("Doe", toCheck.getLastName());
+        assertEquals("John", toCheck.getFirstName());
+    }
+
+    @Test
+    public void shouldNotAddExistingPatient() {
+        Patient patient = new Patient(null, "Doe", "John", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+
+        when(patientRepository.findByLastNameAndFirstName(anyString(), anyString())).thenReturn(Optional.of(patient));
+
+        InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
+                () -> patientService.addPatient(patient));
+
+        assertTrue(invalidParameterException.getMessage().contains("Patient already exists"));
     }
 }
