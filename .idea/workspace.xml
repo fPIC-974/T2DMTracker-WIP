@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="- Added Tests">
-      <change afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Setting up Controller">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patients.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/WebAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/WebAppApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +30,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,6 +60,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -61,6 +71,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "settings.editor.selected.configurable": "spring.boot",
     "spring.configuration.checksum": "49957851e510af8b098118fb1064e1ea"
   },
   "keyToStringList": {
@@ -207,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696167298405</updated>
       <workItem from="1696167299819" duration="10659000" />
-      <workItem from="1696410724313" duration="2075000" />
+      <workItem from="1696410724313" duration="10368000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -258,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696179090082</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="API :&#10;- Setting up Controller">
+      <created>1696413046810</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696413046810</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +311,11 @@
     <MESSAGE value="- Moved PatientService to interface" />
     <MESSAGE value="- PatientService.getPatientById added" />
     <MESSAGE value="- Added Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added Tests" />
+    <MESSAGE value="API :&#10;- Setting up Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Setting up Controller" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
