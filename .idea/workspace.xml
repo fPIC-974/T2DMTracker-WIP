@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="- PatientService.getPatientById added">
-      <change afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="- Added Tests">
+      <change afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/ApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,7 +60,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "spring.configuration.checksum": "49957851e510af8b098118fb1064e1ea"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -86,7 +87,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PatientServiceTest">
+  <component name="RunManager" selected="Spring Boot.ApiApplication">
     <configuration name="PatientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
@@ -205,7 +206,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696167298405</updated>
-      <workItem from="1696167299819" duration="9350000" />
+      <workItem from="1696167299819" duration="10659000" />
+      <workItem from="1696410724313" duration="2075000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -249,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696173694924</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Added Tests">
+      <created>1696179090082</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696179090082</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +292,7 @@
     <MESSAGE value="- Patient model and repo&#10;- Patient Service for testing" />
     <MESSAGE value="- Moved PatientService to interface" />
     <MESSAGE value="- PatientService.getPatientById added" />
-    <option name="LAST_COMMIT_MESSAGE" value="- PatientService.getPatientById added" />
+    <MESSAGE value="- Added Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added Tests" />
   </component>
 </project>

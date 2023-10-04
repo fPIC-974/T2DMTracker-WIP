@@ -6,8 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
-@SpringBootApplication
+// TODO - Disabling Spring Security for testing purposes
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
 public class ApiApplication implements CommandLineRunner {
 
 	@Autowired
