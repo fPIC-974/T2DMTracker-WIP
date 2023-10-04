@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Setting up Controller">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patients.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/WebAppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/WebAppApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Setting up Controller" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,28 +44,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "settings.editor.selected.configurable": "spring.boot",
-    "spring.configuration.checksum": "49957851e510af8b098118fb1064e1ea"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;49957851e510af8b098118fb1064e1ea&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
