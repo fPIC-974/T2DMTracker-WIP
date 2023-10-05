@@ -69,4 +69,21 @@ public class PatientProxy {
 
         return response.getBody();
     }
+
+    public Patient updatePatient(String id, Patient patient) {
+        String apiUrl = customProperties.getApiUrl();
+
+        RestTemplate restTemplate = new RestTemplate();
+
+        HttpEntity<Patient> request = new HttpEntity<>(patient);
+
+        ResponseEntity<Patient> response = restTemplate.exchange(
+                apiUrl + "/patient?id=" + id,
+                HttpMethod.PUT,
+                request,
+                Patient.class
+        );
+
+        return response.getBody();
+    }
 }

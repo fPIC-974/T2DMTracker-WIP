@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -58,6 +59,31 @@ public class PatientController {
         patientService.addPatient(patient);
 
         model.addAttribute("patients", patientService.getPatients());
+
+        return "redirect:/patient/list";
+    }
+
+//    @GetMapping("/patient/update?id={id}")
+    @GetMapping("/patient/update")
+    public String showUpdateForm(@RequestParam String id, Model model) {
+        logger.debug("GET -- /patient/update - " + id);
+
+        Patient patient = patientService.getPatient(id);
+
+        model.addAttribute("patient", patient);
+
+        return "patient/update";
+    }
+
+    @PostMapping("/patient/update")
+    public String updateBid(@RequestParam String id, @Valid Patient patient,
+                            BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "patient/update";
+        }
+
+        patientService.updatePatient(id, patient);
+        model.addAttribute("patient", patientService.getPatients());
 
         return "redirect:/patient/list";
     }

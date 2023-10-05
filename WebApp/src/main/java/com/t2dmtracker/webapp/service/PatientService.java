@@ -50,4 +50,14 @@ public class PatientService {
 
         return toSave;
     }
+
+    public Patient updatePatient(String id, Patient patient) {
+        logger.debug("Calling updatePatient(" + id + ", " + patient + ")");
+
+        Patient toUpdate = patientProxy.updatePatient(id, patient);
+
+        logger.debug("Updated Patient : " + toUpdate);
+
+        return toUpdate;
+    }
 }
