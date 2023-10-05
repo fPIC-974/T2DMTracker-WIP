@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="NotesAPI : &#10;- Created service">
-      <change afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="NotesAPI : &#10;- Created controller">
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/NotesApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/NotesApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +27,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -79,6 +88,7 @@
       <recent name="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.t2dmtracker.notesapi.service" />
       <recent name="com.t2dmtracker.api.service" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -92,7 +102,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PatientServiceTest.shouldNotDeleteMissingPatient">
+  <component name="RunManager" selected="Spring Boot.NotesApiApplication">
     <configuration name="PatientServiceTest.shouldDeletePatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
@@ -224,7 +234,7 @@
       <workItem from="1696495169154" duration="1516000" />
       <workItem from="1696508122957" duration="2756000" />
       <workItem from="1696519995641" duration="215000" />
-      <workItem from="1696520219043" duration="2011000" />
+      <workItem from="1696520219043" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -359,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696521876509</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="NotesAPI : &#10;- Created controller">
+      <created>1696522242491</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1696522242491</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +410,8 @@
     <MESSAGE value="NotesAPI : &#10;- Created model" />
     <MESSAGE value="NotesAPI : &#10;- Created repo" />
     <MESSAGE value="NotesAPI : &#10;- Created service" />
-    <option name="LAST_COMMIT_MESSAGE" value="NotesAPI : &#10;- Created service" />
+    <MESSAGE value="NotesAPI : &#10;- Created controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="NotesAPI : &#10;- Created controller" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

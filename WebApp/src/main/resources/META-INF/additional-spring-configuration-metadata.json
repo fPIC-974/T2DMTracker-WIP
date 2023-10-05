@@ -4,5 +4,10 @@
       "name": "com.t2dmtracker.webapp.apiUrl",
       "type": "java.lang.String",
       "description": "Description for com.t2dmtracker.webapp.apiUrl."
-  }
-] }
+    },
+    {
+      "name": "com.t2dmtracker.webapp.notesApiUrl",
+      "type": "java.lang.String",
+      "description": "Description for com.t2dmtracker.webapp.notesApiUrl."
+    }
+  ] }
