@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: home
+          uri: http://localhost:8080
+          predicates:
+            - Path=/
+        - id: patient
+          uri: http://localhost:8080
+          predicates:
+            - Path=/patient
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
