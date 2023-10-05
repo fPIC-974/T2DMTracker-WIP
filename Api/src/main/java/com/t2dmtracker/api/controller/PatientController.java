@@ -30,4 +30,9 @@ public class PatientController {
     public Patient addPatient(@RequestBody Patient patient) {
         return patientService.addPatient(patient);
     }
+
+    @PutMapping("/patient")
+    public Patient updatePatient(@RequestParam String id, @RequestBody Patient patient) {
+        return patientService.updatePatient(id, patient);
+    }
 }

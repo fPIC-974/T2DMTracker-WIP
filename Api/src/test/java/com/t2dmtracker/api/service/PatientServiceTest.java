@@ -93,4 +93,31 @@ class PatientServiceTest {
 
         assertTrue(invalidParameterException.getMessage().contains("Patient already exists"));
     }
+
+    @Test
+    public void shouldUpdatePatient() {
+        Patient patient = new Patient("idea", "Doe", "John", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+        Patient update = new Patient("idea", "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+
+        when(patientRepository.existsById(anyString())).thenReturn(true);
+        when(patientRepository.save(any(Patient.class))).thenReturn(update);
+
+        Patient toCheck = patientService.updatePatient("idea", update);
+
+        assertEquals(patient.getId(), toCheck.getId());
+        assertEquals(patient.getLastName(), toCheck.getLastName());
+        assertNotEquals(patient.getFirstName(), toCheck.getFirstName());
+    }
+
+    @Test
+    public void shouldNotUpdateMissingPatient() {
+        Patient update = new Patient("idea", "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+
+        when(patientRepository.existsById(anyString())).thenReturn(false);
+
+        InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
+                () -> patientService.updatePatient("idea", update));
+
+        assertTrue(invalidParameterException.getMessage().contains("Patient not found"));
+    }
 }

@@ -59,4 +59,23 @@ public class PatientService implements IPatientService {
 
         return toSave;
     }
+
+    @Override
+    public Patient updatePatient(String id, Patient patient) {
+        logger.debug("Calling updatePatient(" + id + ", "+ patient);
+
+        if (!patientRepository.existsById(id)) {
+            logger.info("Patient not found -- ID : " + id);
+
+            throw new InvalidParameterException("Patient not found");
+        }
+
+        patient.setId(id);
+
+        Patient toUpdate = patientRepository.save(patient);
+
+        logger.debug("Updated Patient : " + toUpdate);
+
+        return toUpdate;
+    }
 }
