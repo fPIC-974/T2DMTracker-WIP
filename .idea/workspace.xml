@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Added Update methods (service, controller) and test">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_3_1_4.xml" beforeDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Added Delete methods (repo, service, controller) and test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -295,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696498941179</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="API :&#10;- Added Delete methods (repo, service, controller) and test">
+      <created>1696501762851</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696501762851</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +328,8 @@
     <MESSAGE value="API :&#10;- Added logging configuration in application.properties" />
     <MESSAGE value="API :&#10;- Added Create methods (repo, service, controller) and test" />
     <MESSAGE value="API :&#10;- Added Update methods (service, controller) and test" />
-    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Added Update methods (service, controller) and test" />
+    <MESSAGE value="API :&#10;- Added Delete methods (repo, service, controller) and test" />
+    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Added Delete methods (repo, service, controller) and test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

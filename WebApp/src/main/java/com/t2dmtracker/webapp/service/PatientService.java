@@ -13,7 +13,7 @@ import java.util.List;
 @Service
 public class PatientService {
 
-    private Logger logger = LoggerFactory.getLogger(PatientService.class);
+    private final Logger logger = LoggerFactory.getLogger(PatientService.class);
 
     private final PatientProxy patientProxy;
 
@@ -59,5 +59,13 @@ public class PatientService {
         logger.debug("Updated Patient : " + toUpdate);
 
         return toUpdate;
+    }
+
+    public void deletePatient(String id) {
+        logger.debug("Calling deletePatient(" + id + ")");
+
+        patientProxy.deletePatient(id);
+
+        logger.debug("Deleted Patient : " + id);
     }
 }

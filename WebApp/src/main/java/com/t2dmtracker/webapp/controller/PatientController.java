@@ -83,7 +83,17 @@ public class PatientController {
         }
 
         patientService.updatePatient(id, patient);
-        model.addAttribute("patient", patientService.getPatients());
+        model.addAttribute("patients", patientService.getPatients());
+
+        return "redirect:/patient/list";
+    }
+
+    @GetMapping("/patient/delete")
+    public String deletePatient(@RequestParam String id, Model model) {
+
+        patientService.deletePatient(id);
+
+        model.addAttribute("patients", patientService.getPatients());
 
         return "redirect:/patient/list";
     }
