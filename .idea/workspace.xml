@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Creating NotesAPI">
-      <change afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/model/Note.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="NotesAPI : &#10;- Created repo">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_3_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotesAPI/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NotesAPI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/NotesApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/NotesApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/repository/NoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/repository/NoteRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,7 +68,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;49957851e510af8b098118fb1064e1ea&quot;
+    &quot;spring.configuration.checksum&quot;: &quot;25d7e133be5e61ef0a7c41c1b2313763&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -223,6 +228,8 @@
       <workItem from="1696410724313" duration="10368000" />
       <workItem from="1696495169154" duration="1516000" />
       <workItem from="1696508122957" duration="2756000" />
+      <workItem from="1696519995641" duration="215000" />
+      <workItem from="1696520219043" duration="1577000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -336,7 +343,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696518476827</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="NotesAPI : &#10;- Created model">
+      <created>1696519040551</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1696519040551</updated>
+    </task>
+    <task id="LOCAL-00018" summary="NotesAPI : &#10;- Created repo">
+      <created>1696519196029</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1696519196029</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +388,9 @@
     <MESSAGE value="WEBAPP :&#10;- Added Delete methods (repo, service, controller)&#10;- Updated Thymeleaf templates" />
     <MESSAGE value="Basic Auth" />
     <MESSAGE value="Creating NotesAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating NotesAPI" />
+    <MESSAGE value="NotesAPI : &#10;- Created model" />
+    <MESSAGE value="NotesAPI : &#10;- Created repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="NotesAPI : &#10;- Created repo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
