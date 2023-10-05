@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Api/Api.iml" filepath="$PROJECT_DIR$/Api/Api.iml" />
       <module fileurl="file://$PROJECT_DIR$/GW/GW.iml" filepath="$PROJECT_DIR$/GW/GW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NotesAPI/NotesAPI.iml" filepath="$PROJECT_DIR$/NotesAPI/NotesAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/T2DMTracker.iml" filepath="$PROJECT_DIR$/T2DMTracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebApp/WebApp.iml" filepath="$PROJECT_DIR$/WebApp/WebApp.iml" />
     </modules>

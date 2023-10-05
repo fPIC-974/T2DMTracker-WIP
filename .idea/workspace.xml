@@ -185,6 +185,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NotesApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="NotesAPI" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.t2dmtracker.notesapi.NotesApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="WebApp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.t2dmtracker.webapp.WebAppApplication" />
