@@ -40,4 +40,14 @@ public class PatientService {
 
         return patientProxy.getPatient(id);
     }
+
+    public Patient addPatient(Patient patient) {
+        logger.debug("Calling addPatient(" + patient + ")");
+
+        Patient toSave = patientProxy.addPatient(patient);
+
+        logger.debug("Added Patient : " + toSave);
+
+        return toSave;
+    }
 }

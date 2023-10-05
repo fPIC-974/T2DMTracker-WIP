@@ -4,6 +4,7 @@ import com.t2dmtracker.webapp.config.CustomProperties;
 import com.t2dmtracker.webapp.model.Patient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -47,6 +48,23 @@ public class PatientProxy {
                 null,
                 new ParameterizedTypeReference<Patient>() {
                 }
+        );
+
+        return response.getBody();
+    }
+
+    public Patient addPatient(Patient patient) {
+        String apiUrl = customProperties.getApiUrl();
+
+        RestTemplate restTemplate = new RestTemplate();
+
+        HttpEntity<Patient> request = new HttpEntity<>(patient);
+
+        ResponseEntity<Patient> response = restTemplate.exchange(
+                apiUrl + "/patient",
+                HttpMethod.POST,
+                request,
+                Patient.class
         );
 
         return response.getBody();
