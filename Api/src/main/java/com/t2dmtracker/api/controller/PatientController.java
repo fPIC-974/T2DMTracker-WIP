@@ -35,4 +35,9 @@ public class PatientController {
     public Patient updatePatient(@RequestParam String id, @RequestBody Patient patient) {
         return patientService.updatePatient(id, patient);
     }
+
+    @DeleteMapping("/patient")
+    public void deletePatient(@RequestParam String id) {
+        patientService.deletePatient(id);
+    }
 }

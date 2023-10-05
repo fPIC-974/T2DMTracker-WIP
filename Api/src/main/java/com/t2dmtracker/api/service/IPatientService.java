@@ -12,4 +12,6 @@ public interface IPatientService {
     Patient addPatient(Patient patient);
 
     Patient updatePatient(String id, Patient patient);
+
+    void deletePatient(String id);
 }

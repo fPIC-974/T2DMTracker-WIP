@@ -7,6 +7,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.security.core.parameters.P;
 
 import java.security.InvalidParameterException;
 import java.time.LocalDate;
@@ -117,6 +118,25 @@ class PatientServiceTest {
 
         InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
                 () -> patientService.updatePatient("idea", update));
+
+        assertTrue(invalidParameterException.getMessage().contains("Patient not found"));
+    }
+
+    @Test
+    public void shouldDeletePatient() {
+        when(patientRepository.existsById(anyString())).thenReturn(true);
+
+        patientService.deletePatient("idea");
+
+        assertDoesNotThrow(() -> {});
+    }
+
+    @Test
+    public void shouldNotDeleteMissingPatient() {
+        when(patientRepository.existsById(anyString())).thenReturn(false);
+
+        InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
+                () -> patientService.deletePatient("idea"));
 
         assertTrue(invalidParameterException.getMessage().contains("Patient not found"));
     }

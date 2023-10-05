@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Added Update methods (service, controller) and test">
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_3_1_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +94,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PatientServiceTest.shouldNotUpdateMissingPatient">
-    <configuration name="PatientServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PatientServiceTest.shouldNotDeleteMissingPatient">
+    <configuration name="PatientServiceTest.shouldDeletePatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Api" />
       <extension name="coverage">
         <pattern>
@@ -105,22 +105,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
       <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PatientServiceTest.shouldAddPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.t2dmtracker.api.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
-      <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
-      <option name="METHOD_NAME" value="shouldAddPatient" />
+      <option name="METHOD_NAME" value="shouldDeletePatient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,6 +122,22 @@
       <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
       <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
       <option name="METHOD_NAME" value="shouldNotAddExistingPatient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PatientServiceTest.shouldNotDeleteMissingPatient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.t2dmtracker.api.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.t2dmtracker.api.service" />
+      <option name="MAIN_CLASS_NAME" value="com.t2dmtracker.api.service.PatientServiceTest" />
+      <option name="METHOD_NAME" value="shouldNotDeleteMissingPatient" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PatientServiceTest.shouldNotDeleteMissingPatient" />
+        <item itemvalue="JUnit.PatientServiceTest.shouldDeletePatient" />
         <item itemvalue="JUnit.PatientServiceTest.shouldNotUpdateMissingPatient" />
         <item itemvalue="JUnit.PatientServiceTest.shouldUpdatePatient" />
         <item itemvalue="JUnit.PatientServiceTest.shouldNotAddExistingPatient" />
-        <item itemvalue="JUnit.PatientServiceTest.shouldAddPatient" />
-        <item itemvalue="JUnit.PatientServiceTest" />
       </list>
     </recent_temporary>
   </component>

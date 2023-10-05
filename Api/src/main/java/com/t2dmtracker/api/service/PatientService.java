@@ -78,4 +78,19 @@ public class PatientService implements IPatientService {
 
         return toUpdate;
     }
+
+    @Override
+    public void deletePatient(String id) {
+        logger.debug("Calling deletePatient(" + id + ")");
+
+        if (!patientRepository.existsById(id)) {
+            logger.info("Patient not found -- ID : " + id);
+
+            throw new InvalidParameterException("Patient not found");
+        }
+
+        patientRepository.deleteById(id);
+
+        logger.debug("Deleted Patient : " + id);
+    }
 }
