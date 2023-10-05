@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class NoteService {
+public class NoteService implements INoteService {
     private final Logger logger = LoggerFactory.getLogger(NoteService.class);
 
     private final NoteRepository noteRepository;
@@ -18,6 +18,7 @@ public class NoteService {
         this.noteRepository = noteRepository;
     }
 
+    @Override
     public List<Note> getNotesByPatient(String id) {
         logger.debug("Calling getNotesByPatient(" + id + ")");
 
