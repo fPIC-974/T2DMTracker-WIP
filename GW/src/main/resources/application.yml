@@ -10,6 +10,10 @@ spring:
           uri: http://localhost:8080
           predicates:
             - Path=/patient
+        - id: note
+          uri: http://localhost:8080
+          predicates:
+            - Path=/note
 management:
   endpoints:
     web:

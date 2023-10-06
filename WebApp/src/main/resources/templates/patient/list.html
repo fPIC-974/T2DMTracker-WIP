@@ -20,7 +20,7 @@
     <td colspan="3">No patients in database</td>
   </tr>
   <tr th:each="patient: ${patients}">
-    <td><span th:text="${patient.id}">ID</span></td>
+    <td><a th:href="@{/patient/details?id={id}(id=${patient.id})}"><span th:text="${patient.id}"></span></a></td>
     <td><span th:text="${patient.lastName}">Last Name</span></td>
     <td><span th:text="${patient.firstName}">First Name</span></td>
     <td><span th:text="${patient.birthdate}">Birth Date</span></td>

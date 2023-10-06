@@ -1,6 +1,8 @@
 package com.t2dmtracker.webapp.controller;
 
+import com.t2dmtracker.webapp.model.Note;
 import com.t2dmtracker.webapp.model.Patient;
+import com.t2dmtracker.webapp.service.NoteService;
 import com.t2dmtracker.webapp.service.PatientService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -20,9 +22,11 @@ public class PatientController {
     Logger logger = LoggerFactory.getLogger(PatientController.class);
 
     private final PatientService patientService;
+    private final NoteService noteService;
 
-    public PatientController(PatientService patientService) {
+    public PatientController(PatientService patientService, NoteService noteService) {
         this.patientService = patientService;
+        this.noteService = noteService;
     }
 
     @GetMapping("/")
@@ -39,6 +43,17 @@ public class PatientController {
         model.addAttribute("patients", patientList);
 
         return "patient/list";
+    }
+
+    @GetMapping("/patient/details")
+    public String getDetails(@RequestParam String id, Model model) {
+        Patient patient = patientService.getPatient(id);
+        List<Note> notes = noteService.getNotesByPatient(id);
+
+        model.addAttribute("patient", patient);
+        model.addAttribute("notes", notes);
+
+        return "patient/details";
     }
 
     @GetMapping("/patient/add")
@@ -63,7 +78,6 @@ public class PatientController {
         return "redirect:/patient/list";
     }
 
-//    @GetMapping("/patient/update?id={id}")
     @GetMapping("/patient/update")
     public String showUpdateForm(@RequestParam String id, Model model) {
         logger.debug("GET -- /patient/update - " + id);
