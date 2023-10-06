@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="GW : &#10;- Added route for notes">
-      <change afterPath="$PROJECT_DIR$/doc/ressources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Doc : &#10;- data.sql (MySQL table and inserts)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="history_view" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -225,7 +222,7 @@
       <workItem from="1696508122957" duration="2756000" />
       <workItem from="1696519995641" duration="215000" />
       <workItem from="1696520219043" duration="9560000" />
-      <workItem from="1696628947744" duration="616000" />
+      <workItem from="1696628947744" duration="934000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -381,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696528420068</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Doc : &#10;- data.sql (MySQL table and inserts)">
+      <created>1696634758499</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1696634758499</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +422,8 @@
     <MESSAGE value="NotesAPI : &#10;- Created controller" />
     <MESSAGE value="WebApp : &#10;- added Note model repo and service&#10;- updated controller&#10;- updated Thymeleaf templates" />
     <MESSAGE value="GW : &#10;- Added route for notes" />
-    <option name="LAST_COMMIT_MESSAGE" value="GW : &#10;- Added route for notes" />
+    <MESSAGE value="Doc : &#10;- data.sql (MySQL table and inserts)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Doc : &#10;- data.sql (MySQL table and inserts)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
