@@ -19,7 +19,7 @@ public class NoteService implements INoteService {
     }
 
     @Override
-    public List<Note> getNotesByPatient(String id) {
+    public List<Note> getNotesByPatient(Integer id) {
         logger.debug("Calling getNotesByPatient(" + id + ")");
 
         List<Note> notes = noteRepository.findByPatientId(id);

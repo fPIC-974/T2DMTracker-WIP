@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Updated API">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Updated WEBAPP">
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/repository/NoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/repository/NoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +222,7 @@
       <workItem from="1696519995641" duration="215000" />
       <workItem from="1696520219043" duration="9560000" />
       <workItem from="1696628947744" duration="934000" />
-      <workItem from="1696636786604" duration="760000" />
+      <workItem from="1696636786604" duration="1095000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -395,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696637226554</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Updated WEBAPP">
+      <created>1696637722602</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696637722602</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +438,8 @@
     <MESSAGE value="GW : &#10;- Added route for notes" />
     <MESSAGE value="Doc : &#10;- data.sql (MySQL table and inserts)" />
     <MESSAGE value="Updated API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated API" />
+    <MESSAGE value="Updated WEBAPP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated WEBAPP" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -17,7 +17,7 @@ public class NoteController {
     }
 
     @GetMapping("/note")
-    public List<Note> getNotesByPatient(@RequestParam String id) {
+    public List<Note> getNotesByPatient(@RequestParam Integer id) {
         return noteService.getNotesByPatient(id);
     }
 }

@@ -5,5 +5,5 @@ import com.t2dmtracker.notesapi.model.Note;
 import java.util.List;
 
 public interface INoteService {
-    List<Note> getNotesByPatient(String id);
+    List<Note> getNotesByPatient(Integer id);
 }

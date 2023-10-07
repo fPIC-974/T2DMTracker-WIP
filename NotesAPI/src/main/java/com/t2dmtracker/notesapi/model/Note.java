@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @NoArgsConstructor
 public class Note {
     @Id
-    private String id;
+    private Integer id;
 
     @NotNull
     private String patientId;
