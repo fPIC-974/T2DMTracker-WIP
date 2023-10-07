@@ -41,7 +41,7 @@ public class PatientProxy {
         return response.getBody();
     }
 
-    public Patient getPatient(String id) {
+    public Patient getPatient(Integer id) {
         String apiUrl = customProperties.getApiUrl();
 
         RestTemplate restTemplate = new RestTemplate();
@@ -74,7 +74,7 @@ public class PatientProxy {
         return response.getBody();
     }
 
-    public Patient updatePatient(String id, Patient patient) {
+    public Patient updatePatient(Integer id, Patient patient) {
         String apiUrl = customProperties.getApiUrl();
 
         RestTemplate restTemplate = new RestTemplate();
@@ -91,7 +91,7 @@ public class PatientProxy {
         return response.getBody();
     }
 
-    public void deletePatient(String id) {
+    public void deletePatient(Integer id) {
         logger.info("Calling deletePatient(" + id + ")");
 
         String apiUrl = customProperties.getApiUrl();

@@ -23,7 +23,7 @@ public class NoteProxy {
         this.customProperties = customProperties;
     }
 
-    public List<Note> getNotesByPatient(String id) {
+    public List<Note> getNotesByPatient(Integer id) {
 
         logger.debug("Calling getNotesByPatient(" + id + ")");
 

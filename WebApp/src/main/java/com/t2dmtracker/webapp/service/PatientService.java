@@ -31,7 +31,7 @@ public class PatientService {
         return patientList;
     }
 
-    public Patient getPatient(String id) {
+    public Patient getPatient(Integer id) {
         logger.debug("Calling getPatient(" + id + ")");
 
         Patient patient = patientProxy.getPatient(id);
@@ -51,7 +51,7 @@ public class PatientService {
         return toSave;
     }
 
-    public Patient updatePatient(String id, Patient patient) {
+    public Patient updatePatient(Integer id, Patient patient) {
         logger.debug("Calling updatePatient(" + id + ", " + patient + ")");
 
         Patient toUpdate = patientProxy.updatePatient(id, patient);
@@ -61,7 +61,7 @@ public class PatientService {
         return toUpdate;
     }
 
-    public void deletePatient(String id) {
+    public void deletePatient(Integer id) {
         logger.debug("Calling deletePatient(" + id + ")");
 
         patientProxy.deletePatient(id);

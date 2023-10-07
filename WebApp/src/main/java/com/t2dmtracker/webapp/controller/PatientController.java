@@ -46,7 +46,7 @@ public class PatientController {
     }
 
     @GetMapping("/patient/details")
-    public String getDetails(@RequestParam String id, Model model) {
+    public String getDetails(@RequestParam Integer id, Model model) {
         Patient patient = patientService.getPatient(id);
         List<Note> notes = noteService.getNotesByPatient(id);
 
@@ -79,7 +79,7 @@ public class PatientController {
     }
 
     @GetMapping("/patient/update")
-    public String showUpdateForm(@RequestParam String id, Model model) {
+    public String showUpdateForm(@RequestParam Integer id, Model model) {
         logger.debug("GET -- /patient/update - " + id);
 
         Patient patient = patientService.getPatient(id);
@@ -90,7 +90,7 @@ public class PatientController {
     }
 
     @PostMapping("/patient/update")
-    public String updateBid(@RequestParam String id, @Valid Patient patient,
+    public String updateBid(@RequestParam Integer id, @Valid Patient patient,
                             BindingResult result, Model model) {
         if (result.hasErrors()) {
             return "patient/update";
@@ -103,7 +103,7 @@ public class PatientController {
     }
 
     @GetMapping("/patient/delete")
-    public String deletePatient(@RequestParam String id, Model model) {
+    public String deletePatient(@RequestParam Integer id, Model model) {
 
         patientService.deletePatient(id);
 

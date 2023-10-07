@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 @Data
 public class Patient {
-    private String id;
+    private Integer id;
 
     private String lastName;
 

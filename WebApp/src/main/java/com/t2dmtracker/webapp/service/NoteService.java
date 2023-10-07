@@ -19,7 +19,7 @@ public class NoteService {
         this.noteProxy = noteProxy;
     }
 
-    public List<Note> getNotesByPatient(String id) {
+    public List<Note> getNotesByPatient(Integer id) {
         logger.debug("Calling getNotesByPatient(" + id + ")");
 
         return noteProxy.getNotesByPatient(id);

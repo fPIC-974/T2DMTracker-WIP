@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3309/T2DMTracker</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="T2DM@localhost" uuid="ba7e0bd5-249e-4fff-89ab-16d067b43295">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://localhost:27017/T2DM</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

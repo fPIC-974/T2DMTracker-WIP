@@ -6,7 +6,7 @@ import lombok.Data;
 public class Note {
     private String id;
 
-    private String patientId;
+    private Integer patientId;
 
     private String note;
 }

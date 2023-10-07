@@ -4,39 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Doc : &#10;- Updated data.sql">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mysql_mysql_connector_j_8_0_33.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_2_9_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_0_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_0_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Updated API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/repository/PatientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/IPatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/PatientService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,30 +53,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;25d7e133be5e61ef0a7c41c1b2313763&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "spring.boot",
+    "spring.configuration.checksum": "25d7e133be5e61ef0a7c41c1b2313763"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mongo&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -249,7 +225,7 @@
       <workItem from="1696519995641" duration="215000" />
       <workItem from="1696520219043" duration="9560000" />
       <workItem from="1696628947744" duration="934000" />
-      <workItem from="1696636786604" duration="370000" />
+      <workItem from="1696636786604" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -412,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696634758499</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated API">
+      <created>1696637226554</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1696637226554</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -450,7 +433,8 @@
     <MESSAGE value="WebApp : &#10;- added Note model repo and service&#10;- updated controller&#10;- updated Thymeleaf templates" />
     <MESSAGE value="GW : &#10;- Added route for notes" />
     <MESSAGE value="Doc : &#10;- data.sql (MySQL table and inserts)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Doc : &#10;- data.sql (MySQL table and inserts)" />
+    <MESSAGE value="Updated API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated API" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
