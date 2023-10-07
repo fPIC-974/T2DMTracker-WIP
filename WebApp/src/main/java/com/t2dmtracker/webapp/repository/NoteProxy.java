@@ -5,6 +5,7 @@ import com.t2dmtracker.webapp.model.Note;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -37,6 +38,25 @@ public class NoteProxy {
                 null,
                 new ParameterizedTypeReference<>() {
                 }
+        );
+
+        return response.getBody();
+    }
+
+    public Note addNote(Note note) {
+        logger.debug("Calling addNote(" + note + ")");
+
+        String notesApiUrl = customProperties.getNotesApiUrl();
+
+        RestTemplate restTemplate = new RestTemplate();
+
+        HttpEntity<Note> request = new HttpEntity<>(note);
+
+        ResponseEntity<Note> response = restTemplate.exchange(
+                notesApiUrl + "/note",
+                HttpMethod.POST,
+                request,
+                Note.class
         );
 
         return response.getBody();

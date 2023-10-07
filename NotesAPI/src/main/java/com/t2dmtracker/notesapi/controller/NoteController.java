@@ -2,10 +2,7 @@ package com.t2dmtracker.notesapi.controller;
 
 import com.t2dmtracker.notesapi.model.Note;
 import com.t2dmtracker.notesapi.service.INoteService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,7 +20,7 @@ public class NoteController {
     }
 
     @PostMapping("/note")
-    public Note addNote(@RequestParam Note note) {
+    public Note addNote(@RequestBody Note note) {
         return noteService.addNote(note);
     }
 }

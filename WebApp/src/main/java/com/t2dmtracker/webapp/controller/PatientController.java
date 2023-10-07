@@ -46,12 +46,13 @@ public class PatientController {
     }
 
     @GetMapping("/patient/details")
-    public String getDetails(@RequestParam Integer id, Model model) {
+    public String getDetails(@RequestParam Integer id, Note note, Model model) {
         Patient patient = patientService.getPatient(id);
         List<Note> notes = noteService.getNotesByPatient(id);
 
         model.addAttribute("patient", patient);
         model.addAttribute("notes", notes);
+        model.addAttribute("note", note);
 
         return "patient/details";
     }
@@ -110,5 +111,14 @@ public class PatientController {
         model.addAttribute("patients", patientService.getPatients());
 
         return "redirect:/patient/list";
+    }
+
+    @PostMapping("/patient/validateNote")
+    public String addNote(@Valid Note note, BindingResult result, Model model) {
+        logger.debug("POST -- /patient/validateNote - " + note);
+
+        noteService.addNote(note);
+
+        return "redirect:/patient/details?id=" + note.getPatientId();
     }
 }

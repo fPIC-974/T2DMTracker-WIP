@@ -24,4 +24,14 @@ public class NoteService {
 
         return noteProxy.getNotesByPatient(id);
     }
+
+    public Note addNote(Note note) {
+        logger.debug("Calling addNote(" + note + ")");
+
+        Note toSave = noteProxy.addNote(note);
+
+        logger.debug("Added Note : " + toSave);
+
+        return note;
+    }
 }

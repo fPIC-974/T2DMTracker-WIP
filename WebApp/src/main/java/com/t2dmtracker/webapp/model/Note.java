@@ -9,4 +9,9 @@ public class Note {
     private Integer patientId;
 
     private String note;
+
+    @Override
+    public String toString() {
+        return this.note.replaceAll("\r\n", "<BR>");
+    }
 }

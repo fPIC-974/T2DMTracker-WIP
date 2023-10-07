@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Polishing">
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="NOTESAPI :&#10;- Added save methods to service and controller">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Note.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/NoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -417,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696644096842</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="NOTESAPI :&#10;- Added save methods to service and controller">
+      <created>1696647578436</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1696647578436</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +446,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="- Patient model and repo&#10;- Patient Service for testing" />
     <MESSAGE value="- Moved PatientService to interface" />
     <MESSAGE value="- PatientService.getPatientById added" />
@@ -460,7 +470,8 @@
     <MESSAGE value="Updated NOTESAPI" />
     <MESSAGE value="Finished updates" />
     <MESSAGE value="API :&#10;- Polishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Polishing" />
+    <MESSAGE value="NOTESAPI :&#10;- Added save methods to service and controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="NOTESAPI :&#10;- Added save methods to service and controller" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
