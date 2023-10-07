@@ -28,4 +28,15 @@ public class NoteService implements INoteService {
 
         return notes;
     }
+
+    @Override
+    public Note addNote(Note note) {
+        logger.debug("Calling addNote(" + note + ")");
+
+        Note toSave = noteRepository.save(note);
+
+        logger.debug("Note added to Patient " + toSave.getPatientId() + " : " + toSave.getNote());
+
+        return toSave;
+    }
 }

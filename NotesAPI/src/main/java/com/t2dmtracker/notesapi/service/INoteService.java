@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface INoteService {
     List<Note> getNotesByPatient(String id);
+
+    Note addNote(Note note);
 }

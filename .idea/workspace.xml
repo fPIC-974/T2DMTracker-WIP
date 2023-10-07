@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Polishing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/controller/NoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/INoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/NotesAPI/src/main/java/com/t2dmtracker/notesapi/service/NoteService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,29 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "spring.boot",
-    "spring.configuration.checksum": "25d7e133be5e61ef0a7c41c1b2313763"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;25d7e133be5e61ef0a7c41c1b2313763&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
