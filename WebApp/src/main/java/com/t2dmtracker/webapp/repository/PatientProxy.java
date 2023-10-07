@@ -26,6 +26,8 @@ public class PatientProxy {
     }
 
     public List<Patient> getPatients() {
+        logger.debug("Calling getPatients()");
+
         String apiUrl = customProperties.getApiUrl();
 
         RestTemplate restTemplate = new RestTemplate();

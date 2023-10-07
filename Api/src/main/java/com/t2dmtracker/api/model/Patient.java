@@ -1,14 +1,14 @@
 package com.t2dmtracker.api.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "patients")
@@ -18,6 +18,7 @@ import java.time.LocalDate;
 public class Patient {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotBlank(message = "Last Name is mandatory")
@@ -26,10 +27,10 @@ public class Patient {
     @NotBlank(message = "First Name is mandatory")
     private String firstName;
 
-    @NotBlank(message = "Birth Date is mandatory")
-    private LocalDate birthdate;
+    @NotNull(message = "Birth Date is mandatory")
+    private LocalDate birthDate;
 
-    @NotBlank(message = "Gender is mandatory")
+    @NotNull(message = "Gender is mandatory")
     private Character gender;
 
     private String address;
