@@ -4,7 +4,6 @@ import com.t2dmtracker.webapp.config.CustomProperties;
 import com.t2dmtracker.webapp.model.Patient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -36,7 +35,7 @@ public class PatientProxy {
                 apiUrl + "/patients",
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<List<Patient>>() {
+                new ParameterizedTypeReference<>() {
                 }
         );
 
@@ -52,7 +51,7 @@ public class PatientProxy {
                 apiUrl + "/patient?id=" + id,
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<Patient>() {
+                new ParameterizedTypeReference<>() {
                 }
         );
 

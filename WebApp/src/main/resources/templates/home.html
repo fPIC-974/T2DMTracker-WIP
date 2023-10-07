@@ -8,6 +8,18 @@
 <body>
 <h1>Welcome to T2DM Tracker !</h1>
 
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <a href="/patient/list">Patient List</a>&nbsp;|&nbsp;
+        </div>
+        <div class="col-6 text-right">
+            Logged in user: <b th:inline="text"  class="user" th:text="${user}"> </b>
+            <form th:action="@{/app-logout}" method="POST">
+                <input type="submit" value="Logout"/>
+            </form>
+        </div>
+    </div>
 <table>
     <thead>
     <tr>
@@ -18,8 +30,9 @@
     <tr th:if="${patients.empty}">
         <td colspan="3">No patients in database</td>
     </tr>
+    <!--/*@thymesVar id="patients" type="com.t2dmtracker.webapp.model.Patient"*/-->
     <tr th:each="patient: ${patients}">
-        <td><span th:text="${patient.id}">ID</span></td>
+        <span th:text="${patient.id}">ID</span></td>
         <td><span th:text="${patient.lastName}">Last Name</span></td>
         <td><span th:text="${patient.firstName}">First Name</span></td>
         <td><span th:text="${patient.birthdate}">Birth Date</span></td>
@@ -29,5 +42,6 @@
     </tr>
     </tbody>
 </table>
+</div>
 </body>
 </html>

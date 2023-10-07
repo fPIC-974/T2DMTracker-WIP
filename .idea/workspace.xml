@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Finished updates">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/model/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/main/java/com/t2dmtracker/api/service/PatientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/test/java/com/t2dmtracker/api/service/PatientServiceTest.java" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="API :&#10;- Polishing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/NoteProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/PatientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +223,7 @@
       <workItem from="1696519995641" duration="215000" />
       <workItem from="1696520219043" duration="9560000" />
       <workItem from="1696628947744" duration="934000" />
-      <workItem from="1696636786604" duration="7231000" />
+      <workItem from="1696636786604" duration="9917000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -412,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696643886196</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="API :&#10;- Polishing">
+      <created>1696644096842</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1696644096842</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +463,8 @@
     <MESSAGE value="Updated WEBAPP" />
     <MESSAGE value="Updated NOTESAPI" />
     <MESSAGE value="Finished updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished updates" />
+    <MESSAGE value="API :&#10;- Polishing" />
+    <option name="LAST_COMMIT_MESSAGE" value="API :&#10;- Polishing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

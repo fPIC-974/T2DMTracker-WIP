@@ -35,7 +35,7 @@ public class NoteProxy {
                 notesApiUrl + "/note?id=" + id,
                 HttpMethod.GET,
                 null,
-                new ParameterizedTypeReference<List<Note>>() {
+                new ParameterizedTypeReference<>() {
                 }
         );
 
