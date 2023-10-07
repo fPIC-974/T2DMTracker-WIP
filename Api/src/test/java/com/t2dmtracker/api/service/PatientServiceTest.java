@@ -52,20 +52,20 @@ class PatientServiceTest {
 
     @Test
     public void shouldGetPatientById() {
-        Patient patient = new Patient("idea", "Doe", "John", LocalDate.of(2222, 12, 2), 'M', "221B BakerStreet", "000-0000-0000");
-        when(patientRepository.findById(anyString())).thenReturn(Optional.of(patient));
+        Patient patient = new Patient(111, "Doe", "John", LocalDate.of(2222, 12, 2), 'M', "221B BakerStreet", "000-0000-0000");
+        when(patientRepository.findById(anyInt())).thenReturn(Optional.of(patient));
 
-        Patient toCheck = patientService.getPatientById("idea");
+        Patient toCheck = patientService.getPatientById(111);
 
         assertNotNull(toCheck);
-        assertEquals("idea", toCheck.getId());
+        assertEquals(111, toCheck.getId());
     }
 
     @Test
     public void shouldNotGetPatientByIncorrectId() {
-        when(patientRepository.findById(anyString())).thenReturn(Optional.empty());
+        when(patientRepository.findById(anyInt())).thenReturn(Optional.empty());
 
-        Patient toCheck = patientService.getPatientById("idea");
+        Patient toCheck = patientService.getPatientById(111);
 
         assertNull(toCheck);
     }
@@ -97,13 +97,13 @@ class PatientServiceTest {
 
     @Test
     public void shouldUpdatePatient() {
-        Patient patient = new Patient("idea", "Doe", "John", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
-        Patient update = new Patient("idea", "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+        Patient patient = new Patient(111, "Doe", "John", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+        Patient update = new Patient(111, "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
 
-        when(patientRepository.existsById(anyString())).thenReturn(true);
+        when(patientRepository.existsById(anyInt())).thenReturn(true);
         when(patientRepository.save(any(Patient.class))).thenReturn(update);
 
-        Patient toCheck = patientService.updatePatient("idea", update);
+        Patient toCheck = patientService.updatePatient(111, update);
 
         assertEquals(patient.getId(), toCheck.getId());
         assertEquals(patient.getLastName(), toCheck.getLastName());
@@ -112,31 +112,31 @@ class PatientServiceTest {
 
     @Test
     public void shouldNotUpdateMissingPatient() {
-        Patient update = new Patient("idea", "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
+        Patient update = new Patient(111, "Doe", "Jane", LocalDate.now(), 'M', "221B Baker St", "000-0000-00000");
 
-        when(patientRepository.existsById(anyString())).thenReturn(false);
+        when(patientRepository.existsById(anyInt())).thenReturn(false);
 
         InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
-                () -> patientService.updatePatient("idea", update));
+                () -> patientService.updatePatient(222, update));
 
         assertTrue(invalidParameterException.getMessage().contains("Patient not found"));
     }
 
     @Test
     public void shouldDeletePatient() {
-        when(patientRepository.existsById(anyString())).thenReturn(true);
+        when(patientRepository.existsById(anyInt())).thenReturn(true);
 
-        patientService.deletePatient("idea");
+        patientService.deletePatient(111);
 
         assertDoesNotThrow(() -> {});
     }
 
     @Test
     public void shouldNotDeleteMissingPatient() {
-        when(patientRepository.existsById(anyString())).thenReturn(false);
+        when(patientRepository.existsById(anyInt())).thenReturn(false);
 
         InvalidParameterException invalidParameterException = assertThrows(InvalidParameterException.class,
-                () -> patientService.deletePatient("idea"));
+                () -> patientService.deletePatient(222));
 
         assertTrue(invalidParameterException.getMessage().contains("Patient not found"));
     }

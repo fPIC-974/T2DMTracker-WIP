@@ -7,11 +7,11 @@ import java.util.List;
 public interface IPatientService {
     List<Patient> getPatients();
 
-    Patient getPatientById(String id);
+    Patient getPatientById(Integer id);
 
     Patient addPatient(Patient patient);
 
-    Patient updatePatient(String id, Patient patient);
+    Patient updatePatient(Integer id, Patient patient);
 
-    void deletePatient(String id);
+    void deletePatient(Integer id);
 }

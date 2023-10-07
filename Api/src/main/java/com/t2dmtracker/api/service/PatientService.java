@@ -33,7 +33,7 @@ public class PatientService implements IPatientService {
     }
 
     @Override
-    public Patient getPatientById(String id) {
+    public Patient getPatientById(Integer id) {
         logger.debug("Calling getPatient(" + id + ")");
 
         Optional<Patient> patient = patientRepository.findById(id);
@@ -61,7 +61,7 @@ public class PatientService implements IPatientService {
     }
 
     @Override
-    public Patient updatePatient(String id, Patient patient) {
+    public Patient updatePatient(Integer id, Patient patient) {
         logger.debug("Calling updatePatient(" + id + ", "+ patient);
 
         if (!patientRepository.existsById(id)) {
@@ -80,7 +80,7 @@ public class PatientService implements IPatientService {
     }
 
     @Override
-    public void deletePatient(String id) {
+    public void deletePatient(Integer id) {
         logger.debug("Calling deletePatient(" + id + ")");
 
         if (!patientRepository.existsById(id)) {

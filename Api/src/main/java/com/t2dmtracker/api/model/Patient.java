@@ -1,29 +1,35 @@
 package com.t2dmtracker.api.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 
-@Document(collection = "patients")
+@Entity
+@Table(name = "patients")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Patient {
 
     @Id
-    private String id;
+    private Integer id;
 
+    @NotBlank(message = "Last Name is mandatory")
     private String lastName;
 
+    @NotBlank(message = "First Name is mandatory")
     private String firstName;
 
+    @NotBlank(message = "Birth Date is mandatory")
     private LocalDate birthdate;
 
+    @NotBlank(message = "Gender is mandatory")
     private Character gender;
 
     private String address;
