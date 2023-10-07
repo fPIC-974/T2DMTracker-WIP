@@ -2,7 +2,6 @@ package com.t2dmtracker.api.controller;
 
 import com.t2dmtracker.api.model.Patient;
 import com.t2dmtracker.api.service.IPatientService;
-import com.t2dmtracker.api.service.PatientService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

@@ -13,7 +13,7 @@ import java.util.Optional;
 @Service
 public class PatientService implements IPatientService {
 
-    private Logger logger = LoggerFactory.getLogger(PatientService.class);
+    private final Logger logger = LoggerFactory.getLogger(PatientService.class);
 
     private final PatientRepository patientRepository;
 
