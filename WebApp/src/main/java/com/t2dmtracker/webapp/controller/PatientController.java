@@ -4,7 +4,9 @@ import com.t2dmtracker.webapp.model.Note;
 import com.t2dmtracker.webapp.model.Patient;
 import com.t2dmtracker.webapp.service.NoteService;
 import com.t2dmtracker.webapp.service.PatientService;
+import com.t2dmtracker.webapp.service.RiskAssessmentService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 @Controller
+@RequiredArgsConstructor
 public class PatientController {
 
     Logger logger = LoggerFactory.getLogger(PatientController.class);
@@ -24,10 +27,7 @@ public class PatientController {
     private final PatientService patientService;
     private final NoteService noteService;
 
-    public PatientController(PatientService patientService, NoteService noteService) {
-        this.patientService = patientService;
-        this.noteService = noteService;
-    }
+    private final RiskAssessmentService riskAssessmentService;
 
     @GetMapping("/")
     public String home(Model model) {
@@ -49,10 +49,12 @@ public class PatientController {
     public String getDetails(@RequestParam Integer id, Note note, Model model) {
         Patient patient = patientService.getPatient(id);
         List<Note> notes = noteService.getNotesByPatient(id);
+        String riskAssessment = riskAssessmentService.getRiskAssessmentByPatientId(id);
 
         model.addAttribute("patient", patient);
         model.addAttribute("notes", notes);
         model.addAttribute("note", note);
+        model.addAttribute("risk", riskAssessment);
 
         return "patient/details";
     }

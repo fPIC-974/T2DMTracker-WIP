@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/NotesAPI/NotesAPI.iml" filepath="$PROJECT_DIR$/NotesAPI/NotesAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/T2DMTracker.iml" filepath="$PROJECT_DIR$/T2DMTracker.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebApp/WebApp.iml" filepath="$PROJECT_DIR$/WebApp/WebApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/riskassessment-service/riskassessment-service.iml" filepath="$PROJECT_DIR$/riskassessment-service/riskassessment-service.iml" />
     </modules>
   </component>
 </project>

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GW" />
         <module name="Api" />
+        <module name="riskassessment-service" />
         <module name="WebApp" />
         <module name="NotesAPI" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="GW" target="17" />
       <module name="NotesAPI" target="17" />
       <module name="patient-service" target="17" />
+      <module name="riskassessment-service" target="17" />
       <module name="WebApp" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -28,6 +30,7 @@
       <module name="NotesAPI" options="-parameters" />
       <module name="WebApp" options="-parameters" />
       <module name="patient-service" options="-parameters" />
+      <module name="riskassessment-service" options="-parameters" />
     </option>
   </component>
 </project>
