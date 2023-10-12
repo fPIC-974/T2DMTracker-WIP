@@ -17,6 +17,7 @@
       <module name="Api" target="17" />
       <module name="GW" target="17" />
       <module name="NotesAPI" target="17" />
+      <module name="patient-service" target="17" />
       <module name="WebApp" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -26,6 +27,7 @@
       <module name="GW" options="-parameters" />
       <module name="NotesAPI" options="-parameters" />
       <module name="WebApp" options="-parameters" />
+      <module name="patient-service" options="-parameters" />
     </option>
   </component>
 </project>
