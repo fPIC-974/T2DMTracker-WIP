@@ -7,13 +7,17 @@ spring:
           predicates:
             - Path=/
         - id: patient
-          uri: http://localhost:8080
+          uri: http://localhost:9000
           predicates:
             - Path=/patient
         - id: note
-          uri: http://localhost:8080
+          uri: http://localhost:9003
           predicates:
             - Path=/note
+        - id: assessment
+          uri: http://localhost:9004
+          predicates:
+            - Path=/assessment
 management:
   endpoints:
     web:

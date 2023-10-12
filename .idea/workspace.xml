@@ -4,39 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="WEBAPP :&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/repository/RiskAssessmentProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/service/RiskAssessmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/RiskassessmentServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/config/CustomProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/controller/RiskAssessmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/model/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/model/Patient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/model/RiskAssessment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/repository/NoteProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/repository/PatientProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/java/com/t2dmtracker/riskassessment/service/RiskAssessmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/riskassessment-service/src/test/java/com/t2dmtracker/riskassessment/RiskassessmentServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/config/CustomProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/java/com/t2dmtracker/webapp/controller/PatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/META-INF/additional-spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebApp/src/main/resources/templates/patient/details.html" afterDir="false" />
+    <list default="true" id="c2ddfa72-5392-41ac-a76a-9e6113755fa5" name="Changes" comment="Risk Assessment Feature:&#10;- Created service, controller, model and repo&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update">
+      <change beforePath="$PROJECT_DIR$/GW/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GW/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +242,7 @@
       <workItem from="1697098562779" duration="550000" />
       <workItem from="1697099125556" duration="1546000" />
       <workItem from="1697100684557" duration="685000" />
-      <workItem from="1697101380610" duration="16849000" />
+      <workItem from="1697101380610" duration="17167000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1696170144478</created>
@@ -485,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697100352166</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Risk Assessment Feature:&#10;- Created service, controller, model and repo&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update">
+      <created>1697126780649</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1697126780649</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- Moved PatientService to interface" />
     <MESSAGE value="- PatientService.getPatientById added" />
     <MESSAGE value="- Added Tests" />
     <MESSAGE value="API :&#10;- Setting up Controller" />
@@ -541,7 +516,8 @@
     <MESSAGE value="API :&#10;- Polishing" />
     <MESSAGE value="NOTESAPI :&#10;- Added save methods to service and controller" />
     <MESSAGE value="WEBAPP :&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update" />
-    <option name="LAST_COMMIT_MESSAGE" value="WEBAPP :&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update" />
+    <MESSAGE value="Risk Assessment Feature:&#10;- Created service, controller, model and repo&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Risk Assessment Feature:&#10;- Created service, controller, model and repo&#10;- Updated Thymeleaf templates&#10;&#10;Dependencies update" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
